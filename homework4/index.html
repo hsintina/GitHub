@@ -1,0 +1,68 @@
+<html>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+</html>
+<style>
+*{
+    position: relative;
+}
+html{
+    display: flex;
+    justify-content: center;
+}
+ button{
+     background: #333333;
+     color:#eeeeee;
+     font-size:15px;
+     padding:5px;
+     margin-bottom:20px;
+     margin-top:10px;
+     margin-left: 12px;
+     border-radius: 20px;
+     cursor:pointer;
+ }
+button:hover{
+    background:#666666;
+}
+.pic{
+    transition-duration: :0.5s;
+    cursor: pointer;   
+    animation: fly 3s ease-in-out 0.5s infinite both;
+}
+
+.cloud1{
+    transition-duration: :0.5s; 
+    animation: flow 3s ease-in-out 0.5s infinite both;
+}
+
+
+@keyframes fly{
+    0%{
+        transform: translateY(300px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes flow{
+    0%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(100px);
+    }
+}
+
+</style>
+
+<body>
+     <div class="button">
+        <button>Rock it</button>
+    </div>
+    <div class="pic">
+    <img src="img/rocket.png" height="20%">
+    </div>
+    <div class="cloud1">
+        <img src="img/cloud.png" height="5%">
+    </div>
+
+</body>
