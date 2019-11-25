@@ -1,30 +1,54 @@
 *{
   font-family:Libre Baskerville;
   position:relative;
-/*   border:solid; */
+  /* border:solid; */
 }
 body{
+background-image: url('img/Yushan.jpg');
+ background-repeat: no-repeat;
+ opacity:0.9;
+ /* background-position-y: 70px; */
+}
+.bg{
+  position: absolute;
+  width: 108%;
+  left:-5%;
 
 }
 .nav{
-  background-color:yellow;
-  display:block;
+  /* background-color:yellow; */
+  /* display:flex;
+  justify-content:flex-end; */
   position:fixed;
-/*   flex-direction:row;
-  justify-content:flex-end;
-   */
+  right:1%;
+}
+#logo{
+  /* width:50%; */
+  position: fixed;
+  left:48%;
+  top:5%;
+}
+#home{
+  position: fixed;
+  top:5%;
+  left:5%;
+  font-size: 14px;
 }
 .button{
   display:inline-flex;
-  flex-direction:row;
-  justify-content:flex-end;
+  /* flex-direction:row; */
+  /* justify-content:flex-end; */
 /*   background:#47CCB4; */
 /*   border-radius:8px; */
   margin:0px;
   padding:10px;
   padding-left:30px;
   padding-right:30px;
+  font-size:14px;
 /*   border-bottom:solid 5px #389C89; */
+}
+#main{
+
 }
 
 /* #abt{
@@ -41,46 +65,74 @@ body{
 .title{
   display:inline-block;
   text-align:center;
-/*   padding-left:50px; */
+  padding-top:15%;
+  padding-left:50px;
 /*   padding-right:50px; */
 /*   width:60%; */
 /*   padding:150px; */
   font-size:50px;
+  color:#333333;
+  letter-spacing:30px;
+  font-weight:500;
 }
 .subtitle{
 
   display:inline-block;
   text-align:center;
+  letter-spacing:2px;
 }
 .page2{
   height:600px;
+  margin-top:100px;
 }
 .page2title{
   display:inline-block;
   margin:10%;
+  color:#f2f2f2;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+#p2bg{
+  top:90px;
+  width:50%;
+  height:600px;
+  position:absolute;
+  left:29%;
+  background-color:#f2f2f2;
+  
 }
 .fact1{
   display:inline-block;
-
   position:relative;
-  top:25px;
+  top:45px;
+  font-size:14px;
+  letter-spacing: 0.5px;
+  line-height:2.2;
 }
 .description{
   display:inline-block;
-
+  line-height:2.4;
+  font-size:14px;
   margin-left:40%;
   margin-right:22%;
+  letter-spacing: 0.2px;
 }
 .page3{
   height:1000px;
+  /* background-color: aqua; */
+}
+#p3tw{
+  position:absolute;
+  left:35%;
+  top:-100px;
 }
 .local{
 }
 .localintro{
   display:inline-block;
   width:20%;
-  height:60%;
-  margin-top:20%;
+  height:50%;
+  margin-top:30%;
   margin-left:10%;
   background-color:#f2f2f2;
 }
@@ -91,18 +143,20 @@ body{
   margin-top:10%;
   margin-left:20%;
   margin-right:20%;
-  margin-bottom:5%;
+/*   margin-bottom:5%; */
   text-align:center;
 }
-
 .localdes{
   display:inline-block;
   padding-left:25px;
   padding-right:25px;
   text-align:left;
   font-size:10pt;
-  line-height:1.5;
+  line-height:2;
   margin-bottom:10px;
+}
+.localist{
+  margin-top:3px;
 }
 .page4{
 /*   height:720px; */
@@ -110,36 +164,84 @@ body{
 .p4title{
   text-align:center;
   margin-top:10%;
-/*   background:red; */
+  font-size:40px;
+  margin-bottom:10%;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
-.food1{
-  
-}
-.food1pic{
-  display:inline-block;
-  width:20%;
-  height:216px;
-  margin-left:20%;
-/*   margin-top:15%; */
-  background:#f2f2f2;
-}
-.foodword{
-  display:inline-block;
-  width:20%;
-  height:30%;
-/*   background:blue; */
-  margin-top:5%;
-  margin-left:-10%;
-}
-.food1til{
+
+.food{
   display:block;
+  height:323px;
+/*   top:10%; */
+}
+.contentleft{
+  display:flex;
+  left:15%;
+/*   margin-top:5%; */
+  align-items:center;
+  width:40%;
+}
+.contentleft1{
+  display:flex;
+  left:20%;
+/*   margin-top:5%; */
+  align-items:center;
+  width:40%;
+}
+.foodpic{
+  display:inline-block;
+  width:50%;
+  height:200px;
+  /* background:#f2f2f2; */
+}
+#rrf{
+  width:250px;
+  top:10px;
+}
+#niu{
+  width:250px;
+  top:10px;
+}
+#chick{
+  width:250px;
+  top:10px; 
+}
+.fooddes{
+  display:inline-block; 
+}
+.fooddes2{
+  display:inline-block;
+  right:50px;
+}
+.foodname{
   font-size:16pt;
   font-weight:700;
-}
-.food1des{
   display:block;
-  font-size:10pt;
-  font-weight:300;
-  margin-top:80px;
-/*   color:white; */
+  letter-spacing: 0.5px;
+}
+.foodword{
+  display:block;
+  font-size:14px;
+  margin-top:25%;
+  /* letter-spacing: 0.2px; */
+}
+.foodword2{
+  display:block;
+  font-size:10px;
+  margin-top:25%;
+  letter-spacing: 0.5px;
+}
+.food2{
+  display:block;
+  height:323px;
+/*   background:yellow; */
+}
+.contentright{
+  display:flex;
+  left:40%;
+/*   margin-top:5%; */
+  align-items:center;
+  width:40%;
+  text-align:right;
 }
