@@ -1,12 +1,13 @@
 *{
   font-family:Libre Baskerville;
-  position:relative;
+  /* position:relative; */
   /* border:solid; */
 }
 body{
 background-image: url('img/Yushan.jpg');
  background-repeat: no-repeat;
  opacity:0.9;
+ background-attachment: fixed;
  /* background-position-y: 70px; */
 }
 .bg{
@@ -16,23 +17,27 @@ background-image: url('img/Yushan.jpg');
 
 }
 .nav{
-  /* background-color:yellow; */
+  /* background-color:#f2f2f2; */
   /* display:flex;
   justify-content:flex-end; */
   position:fixed;
   right:1%;
+  z-index: 1001;
 }
 #logo{
   /* width:50%; */
   position: fixed;
-  left:48%;
+  left:45%;
   top:5%;
+  z-index: 1003;
 }
 #home{
   position: fixed;
   top:5%;
   left:5%;
   font-size: 14px;
+  list-style-type: none;
+  z-index: 1002;
 }
 .button{
   display:inline-flex;
@@ -45,10 +50,14 @@ background-image: url('img/Yushan.jpg');
   padding-left:30px;
   padding-right:30px;
   font-size:14px;
+  color: #333333;
 /*   border-bottom:solid 5px #389C89; */
 }
-#main{
+.button:hover{
+  color:#000000;
+}
 
+#main{
 }
 
 /* #abt{
@@ -58,14 +67,24 @@ background-image: url('img/Yushan.jpg');
   display:flex;
   flex-direction:column;
   justify-content:center;
-  height:500px;
+  /* height:500px; */
+  height: 100vh;
 /*   flex-direction:column; */
 /*   padding:50px; */
+animation: 3s ease-out 0s 1 slideup;
 }
+/* section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-height: 100vh;
+  scroll-snap-align: start;
+} */
 .title{
   display:inline-block;
   text-align:center;
-  padding-top:15%;
+  padding-top:5%;
   padding-left:50px;
 /*   padding-right:50px; */
 /*   width:60%; */
@@ -74,6 +93,17 @@ background-image: url('img/Yushan.jpg');
   color:#333333;
   letter-spacing:30px;
   font-weight:500;
+  
+}
+@keyframes slideup  {
+  0% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 .subtitle{
 
@@ -82,25 +112,57 @@ background-image: url('img/Yushan.jpg');
   letter-spacing:2px;
 }
 .page2{
-  height:600px;
-  margin-top:100px;
+  /* height:600px; */
+  height: 100vh;
+  position: relative;
+  /* margin-top:100px; */
+}
+.tw2{
+  position:absolute;
+  left:-25%;
+  top:35%;
+  /* right:50%; */
+  /* bottom:100px; */
+  height:100vh;
 }
 .page2title{
   display:inline-block;
   margin:10%;
-  color:#f2f2f2;
+  /* color:#f2f2f2; */
+  color:#333333;
   font-weight: 500;
   letter-spacing: 1px;
+  font-size: 30px;
 }
+/* @keyframes slideup  {
+  0% {
+    transform: translateY(50%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+} */
 #p2bg{
-  top:90px;
+  /* top:90px; */
   width:50%;
-  height:600px;
+  /* height:600px; */
+  height: 100vh;
   position:absolute;
+  /* position:relative; */
   left:29%;
   background-color:#f2f2f2;
-  
+  opacity:0.8;
+  z-index: -1;
+  /* top:-90px; */
+  animation: 1s ease-out 0s 1 slideup;
 }
+/* .p2content{
+  position:relative;
+  display:inline-block;
+  left:20%;
+  top:-30%;
+
+} */
 .fact1{
   display:inline-block;
   position:relative;
@@ -119,20 +181,46 @@ background-image: url('img/Yushan.jpg');
 }
 .page3{
   height:1000px;
+  position: relative;
   /* background-color: aqua; */
 }
+.map{
+  position: absolute;
+  height:115vh;
+  left: 35%;
+  top: 5%;
+}
+#yilan{
+  /* position:relative; */
+  cursor: pointer;
+  /* left:728px;
+  top:-655px; */
+  /* transform: scale(0.73); */
+}
+/* #yilan:hover{
+  /* transform: scale(1.1); */
+} */
 #p3tw{
   position:absolute;
-  left:35%;
-  top:-100px;
+  left:55%;
+  /* top:-1px; */
 }
+.tw{
+  position:absolute;
+  left:20%;
+  top:15%;
+  /* right:50%; */
+  /* bottom:100px; */
+  height:100vh;
+}
+
 .local{
 }
 .localintro{
   display:inline-block;
   width:20%;
   height:50%;
-  margin-top:30%;
+  margin-top:10%;
   margin-left:10%;
   background-color:#f2f2f2;
 }
@@ -159,23 +247,29 @@ background-image: url('img/Yushan.jpg');
   margin-top:3px;
 }
 .page4{
+  position: relative;
 /*   height:720px; */
 }
 .p4title{
+  position: relative;
   text-align:center;
-  margin-top:10%;
+  /* top: 80px; */
+  /* margin-top:10%; */
   font-size:40px;
   margin-bottom:10%;
   font-weight: 500;
   letter-spacing: 1px;
+  padding: 15px;
 }
 
 .food{
+  position: relative;
   display:block;
   height:323px;
 /*   top:10%; */
 }
 .contentleft{
+  position: relative;
   display:flex;
   left:15%;
 /*   margin-top:5%; */
@@ -183,6 +277,7 @@ background-image: url('img/Yushan.jpg');
   width:40%;
 }
 .contentleft1{
+  position: relative;
   display:flex;
   left:20%;
 /*   margin-top:5%; */
@@ -190,54 +285,65 @@ background-image: url('img/Yushan.jpg');
   width:40%;
 }
 .foodpic{
+  position: relative;
   display:inline-block;
   width:50%;
   height:200px;
   /* background:#f2f2f2; */
 }
 #rrf{
+  position: relative;
   width:250px;
   top:10px;
 }
 #niu{
+  position: relative;
   width:250px;
   top:10px;
 }
 #chick{
+  position: relative;
   width:250px;
   top:10px; 
 }
 .fooddes{
+  position: relative;
   display:inline-block; 
 }
 .fooddes2{
+  position: relative;
   display:inline-block;
   right:50px;
 }
 .foodname{
+  position: relative;
   font-size:16pt;
   font-weight:700;
   display:block;
   letter-spacing: 0.5px;
 }
 .foodword{
+  position: relative;
   display:block;
   font-size:14px;
   margin-top:25%;
   /* letter-spacing: 0.2px; */
 }
 .foodword2{
+  position: relative;
   display:block;
   font-size:10px;
   margin-top:25%;
   letter-spacing: 0.5px;
 }
 .food2{
+  position: relative;
   display:block;
   height:323px;
 /*   background:yellow; */
 }
 .contentright{
+  position: relative;
   display:flex;
   left:40%;
 /*   margin-top:5%; */
