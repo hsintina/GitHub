@@ -1,0 +1,21 @@
+<svg class="second" xmlns="http://www.w3.org/2000/svg" width="54" height="35.77" viewBox="0 0 54 35.77">
+  <defs>
+    <style>
+      .step2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <line class="step2" y1="8.77" x2="54" y2="8.77"/>
+        <path class="step2" d="M5.84,8.77a12.51,12.51,0,0,1,10.27-5.5H36.89A13.69,13.69,0,0,1,47,8.77Z"/>
+        <path class="step2" d="M24,2.77S25,.5,27,.5s2.63,2.27,2.63,2.27Z"/>
+        <path class="step2" d="M6,8.77H47a0,0,0,0,1,0,0V25.68a9.59,9.59,0,0,1-9.59,9.59H15.59A9.59,9.59,0,0,1,6,25.68V8.77A0,0,0,0,1,6,8.77Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

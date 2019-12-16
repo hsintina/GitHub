@@ -1,0 +1,208 @@
+*{
+    font-family:Libre Baskerville;
+    position:relative;
+    /* border:solid; */
+  }
+.topnav {
+    /* overflow: hidden; */
+    /* background-color: #ffffff; */
+    opacity: 0.9;
+    margin:0;
+    position: FIXED;
+    width:100vw;
+    left: -5px;
+    z-index: 10000000;
+  }
+  .topnav a {
+    float: left;
+    color: #333;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 10px;
+    /* position: fixed; */
+  }
+  
+  .topnav a:hover {
+    background-color: #fff;
+    opacity:0.7;
+    color: black;
+    border-bottom:solid 1px #020202;
+  
+  }
+  .topnav-right {
+    float: right;
+  }
+  .nav{
+    /* background-color:#f2f2f2; */
+    /* display:flex;
+    justify-content:flex-end; */
+    position:fixed;
+    right:1%;
+    z-index: 1001;
+  }
+  .bgpic{
+      height: 75vh;
+      width: auto;
+      top: 12.5vh;
+      left:-1vh;
+      animation:1s ease-in 0s 1 slideup;
+  }
+  @keyframes slideup  {
+    0% {
+      transform: translateY(2.5%);
+      opacity: 0.2;
+    }
+    100%{
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  @keyframes slidedown  {
+    0% {
+      transform: translateY(-2.5%);
+      opacity: 0.2;
+    }
+    100%{
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  #logo{
+    position: absolute;;
+    left:45vw;
+    top:2vh;
+  }
+  .foodtitle{
+      position: absolute;
+      font-size:50px;
+      font-weight: 200;
+      letter-spacing: 1px;
+      left:40vw;
+      top:25vh;
+  }
+  .content{
+      width:25vw;
+      position: absolute;
+      left:52.5vw;
+      top:45vh;
+      font-size: 10px;
+      letter-spacing: 1px;
+      font-weight: 100;
+      line-height: 18px;
+      text-align: justify;
+  }
+  .pic2{
+    position: absolute;
+    width:17vw;
+    height: auto;
+    top: 6.75vh;
+    right:-1vh;
+    animation:1s ease-in 0s 1 slidedown;
+  }
+  .makingspace{
+    position: absolute;
+    width:17vw;
+    height:63vh;
+    right:-1vh;
+    top:34.5vh;
+    z-index: -1;
+    background-color: #000;
+  }
+  .makingtitle{
+    position: absolute;
+    right:3vw;
+    /* top:34.5vh; */
+    margin-top:4vh;
+    z-index: 1;
+    color: #f2f2f2;
+    font-weight: 100;
+  }
+  .first{
+      left:6vw;
+      top:5vh;
+      transform: scale(0.75);
+  }
+  .wording1{
+    position: absolute;
+    margin-top:6vh;
+    margin-left: 12%;
+    margin-right: 7.5%;
+    z-index: 1;
+    color: #f2f2f2;
+    font-weight: 100;
+    font-size: 1px;
+    transform: scale(0.8);
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+  .second{
+    right:-0.5vw;
+    top:17vh;
+    transform: scale(0.75);
+}
+.wording2{
+    position: absolute;
+    margin-top:16vh;
+    margin-left: 12%;
+    margin-right: 7.5%;
+    z-index: 1;
+    color: #f2f2f2;
+    font-weight: 100;
+    font-size: 1px;
+    transform: scale(0.8);
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+  .third{
+    left:4vw;
+    top:27vh;
+    transform: scale(0.75);
+}
+.forth{
+    left:2vw;
+    top:35vh;
+    transform: scale(0.75);
+}
+.wording3{
+    position: absolute;
+    margin-top:26vh;
+    margin-left: 12%;
+    margin-right: 7.5%;
+    z-index: 1;
+    color: #f2f2f2;
+    font-weight: 100;
+    font-size: 1px;
+    transform: scale(0.8);
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+  .wording4{
+    position: absolute;
+    margin-top:34vh;
+    margin-left: 12%;
+    margin-right: 7.5%;
+    z-index: 1;
+    color: #f2f2f2;
+    font-weight: 100;
+    font-size: 1px;
+    transform: scale(0.8);
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+  .words{
+      top:-5px;
+  }
+  .next{
+      position: absolute;
+      right:0vw;
+      bottom:-28vh;
+  }
+  .foodlink a{
+    color: #333;
+    left:53vw;
+    top:7.5vh;
+    font-size:10px;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+  }

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55" height="60.21" viewBox="0 0 55 60.21">
+  <defs>
+    <style>
+      .cls-100, .cls-500 {
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-100 {
+        stroke: #fff;
+        stroke-linecap: round;
+      }
+
+      .cls-200 {
+        fill: #fff;
+      }
+
+      .cls-300 {
+        fill: #878787;
+      }
+
+      .cls-400 {
+        fill: #e6e6e6;
+      }
+
+      .cls-500 {
+        stroke: #878787;
+        stroke-width: 0.25px;
+      }
+    </style>
+  </defs>
+  <title>02Asset 28</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g>
+        <line class="cls-100" x1="0.5" y1="25.21" x2="54.5" y2="25.21"/>
+        <path class="cls-100" d="M6.5,25.21h41a0,0,0,0,1,0,0V42.12a9.59,9.59,0,0,1-9.59,9.59H16.09A9.59,9.59,0,0,1,6.5,42.12V25.21A0,0,0,0,1,6.5,25.21Z"/>
+      </g>
+      <polygon class="cls-200" points="19.36 56.45 17.19 60.21 21.53 60.21 19.36 56.45"/>
+      <polygon class="cls-200" points="27.5 56.45 25.33 60.21 29.67 60.21 27.5 56.45"/>
+      <polygon class="cls-200" points="35.64 56.45 33.47 60.21 37.81 60.21 35.64 56.45"/>
+      <ellipse class="cls-300" cx="45.95" cy="10.14" rx="3.01" ry="1.39" transform="matrix(0.5, -0.87, 0.87, 0.5, 14.19, 44.86)"/>
+      <ellipse class="cls-300" cx="49.84" cy="14.35" rx="2.71" ry="1.31" transform="translate(20.43 57.07) rotate(-71.52)"/>
+      <rect class="cls-400" x="10.86" y="4.69" width="8.63" height="14.13" transform="translate(-2.83 5.12) rotate(-17.54)"/>
+      <rect class="cls-500" x="12.38" y="7.17" width="5.59" height="9.16" transform="translate(-2.83 5.12) rotate(-17.54)"/>
+      <circle class="cls-400" cx="31.71" cy="11.75" r="4.13"/>
+      <circle class="cls-400" cx="39.3" cy="4.13" r="4.13"/>
+    </g>
+  </g>
+</svg>
