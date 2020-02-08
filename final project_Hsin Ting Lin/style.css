@@ -2,16 +2,12 @@
   font-family:Libre Baskerville;
   position:relative;
   /* border:solid; */
+  /* overflow-x:hidden; */
 }
 body{
   width:100vw;
   height:auto;
-  /* overflow: hidden; */
-/* background-image: url('img/Yushan-2.png'),url('img/Yushan-1.png'),url('img/Yushan-3.png');
- background-repeat: no-repeat;
- opacity:0.9;
- background-attachment: fixed; */
- /* background-position-y: 70px; */
+  overflow-x:hidden;
 }
 #bg1{
   z-index: -99;
@@ -24,14 +20,7 @@ body{
   z-index: -100;
   top: -5px;
 }
-/* #myVideo{
-  mix-blend-mode: screen;
-  opacity:0.1;
-  position:fixed;
-  scale:1.5;
-  top:-10px;
-  left:-10px;
-} */
+
 .bg{
   position: absolute;
   width: 108%;
@@ -39,8 +28,6 @@ body{
 
 }
 .topnav {
-  /* overflow: hidden; */
-  /* background-color: #ffffff; */
   opacity: 0.9;
   margin:0;
   position: FIXED;
@@ -210,12 +197,20 @@ animation: 3s ease-in-out 0s 1 slideup;
 }
 .page2title{
   display:inline-block;
-  margin:10%;
-  /* color:#f2f2f2; */
-  color:#eee;
+  margin-left:45%;
+  margin-top:7.5%;
+  /* background-color: red;   */
+  color:#333333;
+  
+  /* color:#eee; */
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 30px;
+}
+.p2titleicon{
+  display:inline-block;
+  margin-left:-5%;
+  top:5px;
 }
 @keyframes slideup  {
   0% {
@@ -227,14 +222,42 @@ animation: 3s ease-in-out 0s 1 slideup;
     opacity: 1;
   }
 }
+.infoline{
+  /*   background-color:red; */
+    display:block;
+    margin:3vw;
+    margin-left:6vw;
+  }
+  .tainfo{
+  /*   background-color:yellow; */
+    display:inline-block;
+    padding-left:5vw;
+    padding-right:5vw;
+  }
+  .divide{
+    display:inline-block;
+    padding-left:1vw;
+    padding-right:1vw;
+  }
+  .maininfo{
+    font-family: 'Merriweather', serif;
+    font-size:30px;
+  }
+  .lan{
+    font-size:25px;
+  }
+  .unit{
+    font-family: 'Merriweather', serif;
+    font-size:5px;
+  }
 #p2bg{
   /* top:90px; */
-  width:50%;
+  width:80%;
   /* height:600px; */
-  height: 100vh;
+  height: 90vh;
   position:absolute;
   /* position:relative; */
-  left:29%;
+  left:10%;
   background-color:#f2f2f2;
   opacity:0.8;
   z-index: -1;
@@ -258,20 +281,32 @@ animation: 3s ease-in-out 0s 1 slideup;
 }
 
 .description{
-  display:inline-block;
+  display:flex;
   line-height:2.4;
   font-size:14px;
-  margin-left:40%;
-  margin-right:22%;
+  /* margin-left:40%;
+  margin-right:22%; */
   letter-spacing: 0.2px;
-  top:-20px;
+  top:-50%;
+}
+.des1{
+  width:35vw;
+  margin-left:12.5%;
+  margin-top:2%;
+}
+.des2{
+  width:35vw;
+  margin-left:2.5%;
+  margin-top:3%;
+  
 }
 #bgbanner{
   position:relative;
-  top:-135px;
+  /* top:-20px; */
+  top:15px;
   width:75vw;
   opacity:0.9;
-  z-index: -10;
+  z-index: 1;
   left: 360px;
 }
 .page3{
@@ -282,14 +317,14 @@ animation: 3s ease-in-out 0s 1 slideup;
 .map{
   position: absolute;
   height:115vh;
-  left: 50%;
+  left: 45%;
   top: 5%;
 }
 .islands{
   position: absolute;
   transform: scale(0.3);
   /* height:115vh; */
-  left: 35%;
+  left: 30%;
   top: 2%;
 }
 #kingman{
@@ -346,7 +381,7 @@ animation: 3s ease-in-out 0s 1 slideup;
   width:20vw;
   height:80vh;
   margin-top:10%;
-  margin-left:10%;
+  margin-left:7.5%;
   background-color:#f2f2f2;
   opacity: 0.7;
 }
